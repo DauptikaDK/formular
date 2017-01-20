@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularvalidering</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="functions.js"></script>
+    <script type="text/javascript" src="formularvalidering.js"></script>
+    <script src="runtime.js"></script>
+</head>
+
+
+<body>
+
+    <h1>Gud er Brian</h1>
+
+    <form id="kontaktFormular">
+        <div class="formGroup">
+            <label for="navn" class="formGroup__label">Skriv dit navn her</label>
+            <input type="text" name="name" id="navn" class="formGroup__input inputName">
+            <span class="userResponse userResponse__name fa fa-times"></span><!-- Placeholder til fejlbeskeder -->
+        </div>
+        <div class="formGroup">
+            <label for="email" class="formGroup__label">Skriv din email her</label>
+            <input type="email" name="email" id="email" class="formGroup__input inputEmail">
+            <span class="userResponse userResponse__email fa fa-times"></span><!-- Placeholder til fejlbeskeder -->
+        </div>
+        <div class="formGroup">
+            <label for="besked" class="formGroup__label">Skriv din besked her</label>
+            <textarea name="message" id="besked" class="formGroup__input inputMessage"></textarea>
+            <span class="userResponse userResponse__textarea fa fa-times"></span><!-- Placeholder til fejlbeskeder -->
+        </div>
+        <button type="submit" class="btn btn--success"><i class="fa fa-envelope"></i> Send</button>
+    </form>
+
+    <div class="formResponse">
+        <p><i class="formResponse__iconPlaceholder"></i> <span class="formResponse__statusPlaceholder"></span></p>
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
